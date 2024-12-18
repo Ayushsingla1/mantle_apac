@@ -300,7 +300,7 @@ const MovieUpload = () => {
                         </div>
                         <FileUploadField
                             label="Upload Movie"
-                            onChange={(e) => changeFileHandler(e, 'movie')}
+                            onChange={(e : any) => changeFileHandler(e, 'movie')}
                             preview={previews.movie}
                             onRemove={() => removeFile('movie')}
                             accept="video/*"
@@ -336,7 +336,7 @@ const MovieUpload = () => {
                         </div>
                         <FileUploadField
                             label="Upload Trailer"
-                            onChange={(e) => changeFileHandler(e, 'trailer')}
+                            onChange={(e : any) => changeFileHandler(e, 'trailer')}
                             preview={previews.trailer}
                             onRemove={() => removeFile('trailer')}
                             accept="video/*"
@@ -372,7 +372,7 @@ const MovieUpload = () => {
                         </div>
                         <FileUploadField
                             label="Movie Poster"
-                            onChange={(e) => changeFileHandler(e, 'poster')}
+                            onChange={(e : any) => changeFileHandler(e, 'poster')}
                             preview={previews.poster}
                             onRemove={() => removeFile('poster')}
                             accept="image/*"
